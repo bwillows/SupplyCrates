@@ -1,0 +1,60 @@
+name: SupplyCrates
+version: '${project.version}'
+main: bwillows.supplycrates.SupplyCrates
+commands:
+  supplycrates:
+    description: Manage envoy supply crates
+    usage: /<command> <start|stop|edit|reload>
+    permission: supplycrates.admin
+
+permissions:
+  supplycrates.*:
+    description: All permissions for SupplyCrates
+    default: op
+    children:
+      supplycrates.admin: true
+      supplycrates.command.start: true
+      supplycrates.command.stop: true
+      supplycrates.command.edit: true
+      supplycrates.command.reload: true
+      supplycrates.loot: true
+      supplycrates.bypasscooldown: true
+
+  supplycrates.admin:
+    description: Admin permission (access to all commands)
+    default: op
+    children:
+      supplycrates.command.start: true
+      supplycrates.command.stop: true
+      supplycrates.command.edit: true
+      supplycrates.command.reload: true
+
+  supplycrates.command.start:
+    description: Start an envoy drop
+    default: op
+
+  supplycrates.command.stop:
+    description: Stop an active envoy drop
+    default: op
+
+  supplycrates.command.edit:
+    description: Edit crate locations
+    default: op
+
+  supplycrates.command.reload:
+    description: Reload crate config files
+    default: op
+
+  supplycrates.loot:
+    description: Allows players to open crates
+    default: true
+
+  supplycrates.bypasscooldown:
+    description: Bypass crate open cooldowns (optional)
+    default: op
+
+
+
+
+
+

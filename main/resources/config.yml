@@ -1,0 +1,21 @@
+# Global SupplyCrates Config
+crate-intervals:
+  example: 1800 # seconds = 30 minutes
+
+# Default block used for crate drops if not specified per envoy
+default_block_type: CHEST
+
+fireworks_on_crate_claim: true
+
+# Messages
+messages:
+  prefix: "&6[&eSupplyCrates&6] "
+  no_permission: "&cYou don't have permission to do that."
+  envoy_started: "&eThe &6{envoy}&e envoy has started!"
+  envoy_stopped: "&cThe &6{envoy}&c envoy has ended."
+  drop_skipped_while_editing: "&eThe &6{envoy} &edrop was skipped because someone is editing it."
+  envoy_ended_all_claimed: "&6All &e{envoy} &6crates have been claimed. The drop has ended."
+  opened_crate: "&aYou looted a supply crate!"
+  crate_claimed: "&e{player} claimed a {envoy} crate! &7({remaining} remaining)"
+
+debug: false

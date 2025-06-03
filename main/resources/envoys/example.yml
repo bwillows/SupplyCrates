@@ -1,0 +1,19 @@
+hologram:
+  - "&e&lSUPPLY CRATE"
+  - "&7&o(( Right click to loot ))"
+
+blockType: CHEST
+particle: FLAME
+
+locations:
+
+loot:
+  - type: item
+    item: DIAMOND
+    amount: 1
+    chance: 100
+
+  - type: command
+    commands:
+      - "eco give {player} 10000"
+    chance: 50
