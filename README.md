@@ -1,6 +1,6 @@
 # SupplyCrates Plugin
 
-Create Supply Crates events at configurable intervals. Allows you to create multiple crate types, configure varying item and command chance based drops, and manage crate locations in game.
+Create Supply Crates events at configurable intervals. 
 
 ## Features
 
